@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "../styles/Shortener.scss";
 import axios from "axios";
-import Header from "./Header";
+import mainImage from "../img/main-image.svg";
 
 const Shortener = () => {
   const getShortenedUrl = () => {
@@ -16,10 +16,13 @@ const Shortener = () => {
   const [originalUrl, setOriginalUrl] = useState("");
   return (
     <div className="shortener">
-      <input type="text" onChange={(e) => setOriginalUrl(e.target.value)} />
-      <button onClick={getShortenedUrl}>SHORTEN</button>
-      <h1>My Url: {shortenedUrl}</h1>
-      <h1>Input: {originalUrl}</h1>
+      <div className="text-container">
+        <input type="text" onChange={(e) => setOriginalUrl(e.target.value)} />
+        <button onClick={getShortenedUrl}>SHORTEN</button>
+        <h1>My Url: {shortenedUrl}</h1>
+        <h1>Input: {originalUrl}</h1>
+      </div>
+      <img src={mainImage} alt="main image" className="main-image" />
     </div>
   );
 };
