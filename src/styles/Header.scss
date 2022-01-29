@@ -14,7 +14,14 @@
 
   a {
     margin: 0;
-    padding: 0 35px 0 35px;
+    margin: 0 35px 0 35px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+
+  a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
   }
 
   .section-container {

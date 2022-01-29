@@ -12,6 +12,7 @@
     flex-direction: column;
 
     width: 420px;
+    margin-bottom: 50px;
 
     h1 {
       font-size: 28pt;
@@ -36,7 +37,6 @@
 
     img {
       height: 700px;
-      // padding-left: 100px;
     }
 
     input {
@@ -52,14 +52,26 @@
       padding-right: 10px;
       padding-left: 10px;
 
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: #00000059 0px 5px 15px;
     }
 
     input:focus {
       outline: none;
     }
 
+    input::placeholder {
+      color: #cacaca;
+    }
+
+    input:focus::placeholder {
+      color: transparent;
+    }
+
     button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       height: 45px;
       width: 140px;
@@ -69,6 +81,11 @@
       border-radius: 150px;
       border: none;
       transition: background 0.5s;
+
+      .check-icon {
+        font-size: 14pt;
+        margin-left: 5px;
+      }
     }
 
     button:hover {
