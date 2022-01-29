@@ -3,8 +3,72 @@
   justify-content: center;
   align-items: center;
 
-  img {
-    height: 700px;
-    padding-left: 100px;
+  height: 90vh;
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 420px;
+
+    .text-urls {
+      color: #fcc400;
+    }
+
+    .description-text {
+      font-weight: 500;
+      font-size: 13pt;
+      line-height: 35px;
+
+      margin-bottom: 40px;
+    }
+
+    img {
+      height: 700px;
+      // padding-left: 100px;
+    }
+
+    input {
+      height: 60px;
+      width: 400px;
+      border: none;
+      border-radius: 150px;
+
+      font-family: "Lato", sans-serif;
+      margin-bottom: 30px;
+      font-size: 18pt;
+      text-align: center;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      height: 45px;
+      width: 140px;
+      background: #fcc400;
+      font-weight: 600;
+      font-size: 12pt;
+      border-radius: 150px;
+      border: none;
+      transition: background 0.5s;
+    }
+
+    button:hover {
+      background: #cfa301;
+      cursor: pointer;
+    }
+  }
+  .main-image {
+    height: 550px;
+    margin-left: 100px;
   }
 }
