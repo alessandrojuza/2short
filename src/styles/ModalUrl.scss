@@ -1,0 +1,52 @@
+.modal-and-background {
+  .dark-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.63);
+  }
+
+  .modal-url {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 450px;
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: #1f1e4d;
+
+    .btn-close {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      height: 45px;
+      width: 140px;
+      background: #fcc400;
+      font-weight: 600;
+      font-size: 12pt;
+      border-radius: 150px;
+      border: none;
+      transition: background 0.5s;
+    }
+
+    .btn-close:hover {
+      background: #cfa301;
+      cursor: pointer;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
