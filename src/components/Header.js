@@ -2,15 +2,15 @@ import React from "react";
 import "../styles/Header.scss";
 import logo from "../img/logo.png";
 
-const Header = () => {
+const Header = ({ showModalAbout }) => {
   return (
     <div className="header">
       <div className="logo-container">
         <img src={logo} alt="logo" className="logo" />
       </div>
       <div className="section-container">
-        <a>ABOUT</a>
-        <a>CONTACT</a>
+        <a onClick={showModalAbout}>ABOUT</a>
+        <a href="mailto:mascia.alessandrio89@gmail.com">CONTACT</a>
       </div>
     </div>
   );

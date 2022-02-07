@@ -11,7 +11,7 @@ const ModalUrl = ({ modalClass, setModalClass, shortenedUrl }) => {
     <div className="modal-and-background">
       <div className={`dark-background ${modalClass}`}></div>
       <div className={`modal-url ${modalClass}`}>
-        <h1>Your URL is ready!</h1>
+        <h1 className="modal-title">Your URL is ready!</h1>
         <a
           href={`https://${shortenedUrl}`}
           target="_blank"

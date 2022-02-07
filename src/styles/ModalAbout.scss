@@ -29,16 +29,11 @@
     flex-direction: column;
 
     color: #1f1e4d;
+    padding: 40px;
 
-    .modal-title {
-      font-size: 32pt;
-    }
-
-    .shortened-url {
-      font-size: 32pt;
-      text-decoration: none;
-      color: #1f1e4d;
-      margin-bottom: 30px;
+    p {
+      font-size: 14pt;
+      line-height: 40px;
     }
 
     .btn-close {

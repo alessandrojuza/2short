@@ -4,9 +4,11 @@ import "./App.scss";
 import Header from "./components/Header";
 import Shortener from "./components/Shortener";
 import ModalUrl from "./components/ModalUrl";
+import ModalAbout from "./components/ModalAbout";
 
 function App() {
   const [modalClass, setModalClass] = useState("hidden");
+  const [modalAboutClass, setModalAboutClass] = useState("hidden");
   const [originalUrl, setOriginalUrl] = useState("");
   const [shortenedUrl, setShortenedUrl] = useState("");
 
@@ -26,9 +28,13 @@ function App() {
     } else alert("Please enter a valid URL!");
   };
 
+  const showModalAbout = () => {
+    setModalAboutClass("");
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header showModalAbout={showModalAbout} />
       <Shortener
         modalClass={modalClass}
         setModalClass={setModalClass}
@@ -43,6 +49,10 @@ function App() {
         setModalClass={setModalClass}
         shortenedUrl={shortenedUrl}
         setOriginalUrl={setOriginalUrl}
+      />
+      <ModalAbout
+        modalAboutClass={modalAboutClass}
+        setModalAboutClass={setModalAboutClass}
       />
     </div>
   );
