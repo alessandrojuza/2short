@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import axios from "axios";
 import "./App.scss";
+import "./styles/Queries.scss";
 import Header from "./components/Header";
 import Shortener from "./components/Shortener";
 import ModalUrl from "./components/ModalUrl";
@@ -19,11 +20,6 @@ function App() {
           `https://api.shrtco.de/v2/shorten?url=${originalUrl}/very/long/link.html`
         )
         .then((res) => setShortenedUrl(res.data.result.short_link));
-      // axios
-      //   .get(
-      //     `https://api.shrtco.de/v2/shorten?url=${originalUrl}/very/long/link.html`
-      //   )
-      //   .then((res) => setShortenedUrl(res.data.result.short_link));
       setModalClass("");
     } else alert("Please enter a valid URL!");
   };

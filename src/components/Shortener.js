@@ -1,16 +1,10 @@
 import { React, useState } from "react";
 import "../styles/Shortener.scss";
-import axios from "axios";
+import "../styles/Queries.scss";
 import mainImage from "../img/main-image.png";
 import CheckIcon from "@mui/icons-material/Check";
 
-const Shortener = ({
-  modalClass,
-  setModalClass,
-  originalUrl,
-  setOriginalUrl,
-  calculateUrl,
-}) => {
+const Shortener = ({ setOriginalUrl, calculateUrl }) => {
   return (
     <div className="shortener">
       <div className="text-container">
@@ -32,8 +26,6 @@ const Shortener = ({
         <button onClick={calculateUrl}>
           SHORTEN <CheckIcon className="check-icon" />
         </button>
-        {/* <h1>My Url: {shortenedUrl}</h1>
-        <h1>Input: {originalUrl}</h1> */}
       </div>
       <img src={mainImage} alt="main image" className="main-image" />
     </div>
