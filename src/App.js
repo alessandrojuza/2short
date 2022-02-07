@@ -17,8 +17,13 @@ function App() {
           `https://api.shrtco.de/v2/shorten?url=${originalUrl}/very/long/link.html`
         )
         .then((res) => setShortenedUrl(res.data.result.short_link));
+      // axios
+      //   .get(
+      //     `https://api.shrtco.de/v2/shorten?url=${originalUrl}/very/long/link.html`
+      //   )
+      //   .then((res) => setShortenedUrl(res.data.result.short_link));
       setModalClass("");
-    } else alert("Please enter a valid URL");
+    } else alert("Please enter a valid URL!");
   };
 
   return (
@@ -37,6 +42,7 @@ function App() {
         modalClass={modalClass}
         setModalClass={setModalClass}
         shortenedUrl={shortenedUrl}
+        setOriginalUrl={setOriginalUrl}
       />
     </div>
   );

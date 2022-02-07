@@ -11,14 +11,6 @@ const Shortener = ({
   setOriginalUrl,
   calculateUrl,
 }) => {
-  // const getShortenedUrl = () => {
-  //   axios
-  //     .get(
-  //       `https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html`
-  //     )
-  //     .then((res) => setShortenedUrl(res.data.result.short_link));
-  // };
-
   return (
     <div className="shortener">
       <div className="text-container">

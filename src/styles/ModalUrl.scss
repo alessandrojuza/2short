@@ -20,6 +20,7 @@
     width: 700px;
     background: white;
     background-image: url(../img/modal-background.png);
+    background-size: contain;
     border-radius: 10px;
 
     display: flex;
@@ -29,12 +30,19 @@
 
     color: #1f1e4d;
 
+    .shortened-url {
+      font-size: 24pt;
+      text-decoration: none;
+      color: #1f1e4d;
+      margin-bottom: 30px;
+    }
+
     .btn-close {
       display: flex;
       justify-content: center;
       align-items: center;
 
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: rgba(0, 0, 0, 0.144) 0px 5px 15px;
       height: 45px;
       width: 140px;
       background: #fcc400;
