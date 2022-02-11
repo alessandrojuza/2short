@@ -98,3 +98,50 @@
     margin-left: 100px;
   }
 }
+
+@media (max-width: 1399px) {
+  .shortener {
+    .main-image {
+      height: 450px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .shortener {
+    .main-image {
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .shortener {
+    .main-image {
+      height: 0px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .shortener {
+    .text-container {
+      transform: scale(0.85);
+      margin: 0;
+      width: 320px;
+
+      .description-text {
+        margin: 0;
+      }
+
+      input {
+        width: 310px;
+      }
+    }
+    .main-image {
+      height: 0px;
+      margin: 0;
+    }
+  }
+}

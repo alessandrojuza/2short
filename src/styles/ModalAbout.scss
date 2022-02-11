@@ -67,3 +67,34 @@
     display: none;
   }
 }
+
+@media (max-width: 1399px) {
+  .modal-and-background {
+    .modal-url {
+      width: 400px;
+      height: 500px;
+      .btn-close {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 480px) {
+  .modal-and-background {
+    .modal-url {
+      width: 320px;
+      height: 650px;
+      padding: 0;
+      .btn-close {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
