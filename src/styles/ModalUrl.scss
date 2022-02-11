@@ -72,3 +72,17 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .modal-and-background {
+    .modal-url {
+      .modal-title {
+        font-size: 14pt;
+      }
+
+      .shortened-url {
+        font-size: 12pt;
+      }
+    }
+  }
+}
